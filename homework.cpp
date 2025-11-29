@@ -1,6 +1,9 @@
 //
 // Created by danil on 22.11.2025.
 //
+//arguments of cos,sin,tg,ctg and exp should be written in breackets
+//for example, "cos x" and "cosx" are invalid, only "cos(x)" is right
+
 #include <iostream>
 #include <string>
 #include <vector>
@@ -12,6 +15,7 @@
 
 int main() {
     std::string line;
+    std::cout<<"enter expression to calculate: ";
     std::getline(std::cin, line);
     std::vector<std::string> result;
     std::vector<std::string> numbers;
@@ -170,6 +174,7 @@ int main() {
         }
         if (result.size()<=3) break;
     }
+    std::cout<<"result: ";
     if (result.size()==3) {
         if (result[2]=="+") std::cout<<std::stod(result[0])+std::stod(result[1])<<std::endl;
         else if (result[2]=="-") std::cout<<std::stod(result[0])-std::stod(result[1])<<std::endl;
