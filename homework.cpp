@@ -3,6 +3,7 @@
 //
 //arguments of cos,sin,tg,ctg and exp should be written in breackets
 //for example, "cos x" and "cosx" are invalid, only "cos(x)" is right
+//
 
 #include <iostream>
 #include <string>
